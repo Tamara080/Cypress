@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('login', (LoginName, Password) => { 
+    cy.log('costum command')
+    cy.get('#customer_menu_top > li > a').click()
+    cy.get('.returncustomer').click()
+    cy.get('#loginFrm_loginname').type(LoginName)
+    cy.get('#loginFrm_password').type(Password)
+    cy.get('#loginFrm > fieldset > .btn').click()
+})
