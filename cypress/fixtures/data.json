@@ -1,0 +1,20 @@
+{
+  "name": "Tako.08",
+  "email": "narivie82@gmail.com",
+  "Title":"Mrs",
+  "password":"080808",
+  "day":"8",
+  "month":"March",
+  "year":"2001",
+  "firstName" : "Tako",
+  "lastName":"Kurtsikidze",
+  "Company":"Smart Academy",
+  "Address":"Tbilisi",
+  "Address2": "Riga",
+  "Country" : "Canada",
+  "State" : "Alberta",
+  "City":"Edmonton",
+  "Zipcode":"T5K 0A1",
+  "mobileNumber":"57748300",
+  "body": "Fixtures are a great way to mock data for responses to routes"
+}

@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+// this is how .click() is implemented
+Cypress.Commands.add('login', (EmailAddress, Password) => { 
+    cy.log('command')
+    cy.get('.shop-menu > .nav > :nth-child(4) > a').click()
+    cy.get('.login-form').should('be.visible')
+    cy.get('[data-qa="login-email"]').type(EmailAddress)
+  cy.get('[data-qa="login-password"]').type(Password)
+  cy.get('[data-qa="login-button"]').click() })
